@@ -40,7 +40,7 @@ function refreshTokens() {
      const key = "h1e0Cf85GZzgeV4OwnUCy9UJzHFkRXHMB4TRw8JC0cS8m38yO2";
      const secret = "U8stylEdGcG0wL1hLccvptLw3491npRMjBP41me2"
     //  const zip = document.querySelector("#zip").value;
-     let queryURL = `https://api.petfinder.com/v2/oauth2/token?grant_type=client_credentials&client_id=${key}&client_secret=${secret}`;
+     let queryURL = `https://api.petfinder.com/v2/oauth2/token?grant_type=client_credentials&client_id=${key}&client_secret=${secret}&callback=?`;
      console.log(queryURL)
     
      return $.ajax({
